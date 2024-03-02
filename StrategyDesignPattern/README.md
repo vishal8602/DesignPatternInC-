@@ -1,5 +1,3 @@
-# Design Pattern In C++
-
 # 1.Strategy Design Pattern
 ## Overview:
     When multiple classes inherit from a common parent class and some of these child classes share similar functionalities, the Strategy Design Pattern can be employed. This pattern allows different behaviors to be defined as separate classes, which can then be selected and used interchangeably within the context of the parent class.
@@ -29,3 +27,10 @@
 
 # Example Code (C++):
     In  Strategy Directory 
+
+# Real-World Analogy of Strategy Design Pattern
+    Imagine you’re planning a trip to a new city,
+    and you have several options for getting there:
+    by car, by train, or by plane. Each mode of transportation offers its own set of advantages
+    and disadvantages, depending on factors such as 
+    cost, travel time, and convenience.
