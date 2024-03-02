@@ -45,7 +45,9 @@ class calculator{
      calculator(doCalculation* strategy){
               this->strategy=strategy;
      }
-
+     void setStrategy(doCalculation* strategy){
+              this->strategy=strategy;
+     }
      int result(int a,int b){
         return strategy->calculate(a,b);
      }
@@ -58,15 +60,24 @@ int main(){
     sub subtractorStrategy;
     mul multilyStategy;
 
+    // calculator calciForDivision(&divideStartegy);
+    // calciForDivision.result(20,10);
+ 
+    // calculator calciForAddition(&adderStrategy);
+    // calciForAddition.result(20,10);
+
+    // calculator calciForSub(&subtractorStrategy);
+    // calciForSub.result(20,10);
+
+    // calculator calciForMul(&multilyStategy);
+    // calciForMul.result(20,10);
+
+    // another way to do 
     calculator calciForDivision(&divideStartegy);
     calciForDivision.result(20,10);
+
+
+    calciForDivision.setStrategy(&adderStrategy);
+    calciForDivision.result(20,10);
  
-    calculator calciForAddition(&adderStrategy);
-    calciForAddition.result(20,10);
-
-    calculator calciForSub(&subtractorStrategy);
-    calciForSub.result(20,10);
-
-    calculator calciForMul(&multilyStategy);
-    calciForMul.result(20,10);
 }
